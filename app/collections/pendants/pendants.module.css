@@ -1,0 +1,55 @@
+.Collections-Link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.Collections-Box {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Collections-Box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px #00000033;
+}
+
+.Collections-Box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.Collections-Box:hover img {
+    transform: scale(1.05);
+}
+
+.Collections-Box-content {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.Collections-Title {
+    font-size: 35px;
+    padding: 0px 20px;
+    font-weight: 300 !important;
+    color: #1a1a1ad3;
+}
+
+.Collections-Box-title {
+    font-size: 15px;
+    color: white;
+}
+
+.Collections-Box-price {
+    font-size: 14px;
+    color: white;
+}
+
+.Collections {
+    padding: 100px 10px;
+}

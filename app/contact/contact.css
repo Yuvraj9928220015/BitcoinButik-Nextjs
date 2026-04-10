@@ -1,0 +1,303 @@
+/* General Page Styling */
+.ContactPage {
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Banner Section */
+.ContactBanner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/NewArrivals-2.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.ContactBanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000033;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.Contact-title-text {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #664D28;
+}
+
+/* Google Map Section */
+.MapSection {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.MapSection iframe {
+    border: none !important;
+}
+
+.ContactFormSection {
+    background: linear-gradient(to bottom, #f4d4a7, #e8ddd4);
+    padding: 80px 0;
+    color: #583E23;
+}
+
+.ContactFormSection .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.ContactFormSection .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center columns */
+}
+
+.get-in-touch-content {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.get-in-touch-content h3 {
+    font-size: 2.5em;
+    /* margin-bottom: 25px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #333;
+}
+
+.get-in-touch-content .email-link {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #666;
+}
+
+.get-in-touch-content .email-link a {
+    color: #583E23;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.get-in-touch-content .email-link a:hover {
+    text-decoration: none;
+}
+
+.email-link a {
+    text-decoration: none;
+}
+
+.get-in-touch-content a,
+.get-in-touch-content a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+p.email-link a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.get-in-touch-content .email-link a:hover {
+    color: #8B4513;
+}
+
+.leave-message-content {
+    padding: 40px 20px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leave-message-content h3 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #333;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.message-form input,
+.message-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+    outline: none;
+    border-color: #583E23;
+    box-shadow: 0 0 0 2px #583e2333;
+}
+
+.message-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.message-form button {
+    background-color: #583E23;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.message-form button:hover {
+    background-color: #8B4513;
+    transform: translateY(-2px);
+}
+
+.message-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .ContactBanner {
+        height: 300px;
+    }
+
+    .banner-content .contact-text {
+        font-size: 3em;
+    }
+
+    .ContactFormSection {
+        padding: 60px 0;
+    }
+
+    .get-in-touch-box,
+    .leave-message-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .message-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ContactBanner {
+        height: 250px;
+    }
+
+    .banner-content .contact-text {
+        font-size: 2.5em;
+    }
+
+    .ContactFormSection {
+        padding: 40px 0;
+    }
+
+    .get-in-touch-content h3,
+    .leave-message-content h3 {
+        font-size: 2em;
+    }
+
+    .message-form {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ContactBanner {
+        height: 200px;
+    }
+
+    .banner-content .contact-text {
+        font-size: 2em;
+    }
+
+    .ContactFormSection {
+        padding: 30px 0;
+    }
+
+    .get-in-touch-content h3,
+    .leave-message-content h3 {
+        font-size: 1.8em;
+    }
+
+    .message-form input,
+    .message-form textarea {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    .message-form button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    .Contact-title-text {
+        margin-top: 80px;
+    }
+}
+
+
+
+.leave-Form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.leave-Form input {
+    width: 100%;
+}
+
+.leave-Form textarea {
+    width: 100%;
+}

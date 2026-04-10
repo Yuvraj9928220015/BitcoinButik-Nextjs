@@ -1,0 +1,274 @@
+.Blog-container-Box-Image {
+  padding: 60px 0;
+}
+
+.Blog-line {
+  width: 100%;
+  height: 90px;
+}
+
+/* ── Card ── */
+.Blog-Section {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Blog-Section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.blog-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-img-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.Blog-Section:hover .blog-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Blog-Section:hover .blog-overlay {
+  opacity: 1;
+}
+
+.blog-overlay span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 8px 18px;
+  border-radius: 4px;
+}
+
+.blog-content {
+  padding: 14px 16px;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.Blog-title {
+  font-size: 23px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.Blog-des {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Detail View ── */
+.BlogDetail-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 24px;
+  background: none;
+  border: 1px solid #333;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.BlogDetail-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.BlogDetail-hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.BlogDetail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.BlogDetail-hero-overlay h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.BlogDetail-meta {
+  display: flex;
+  gap: 20px;
+  color: #ffffffcc;
+  font-size: 14px;
+}
+
+.BlogDetail-description {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.BlogDetail-divider {
+  width: 60px;
+  height: 4px;
+  background: #111;
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+
+.BlogDetail-para {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.blog-btn {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.blog-btn span {
+  padding: 10px;
+  border: 1px solid;
+}
+
+/* ── H1 Intro Section ── */
+.Blog-intro-section {
+  background: #f9f6f1;
+  padding: 50px 0 30px;
+  border-bottom: 1px solid #e8e0d5;
+}
+
+.Blog-main-h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.Blog-intro-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  max-width: 800px;
+}
+
+/* ── Hashtags ── */
+.BlogDetail-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.hashtag {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ── Blog Detail Rich Content ── */
+.BlogDetail-content h2 {
+  font-size: 28px;
+  color: #111;
+  margin: 36px 0 14px;
+  line-height: 1.3;
+}
+
+.BlogDetail-content h3 {
+  font-size: 24px;
+  color: #222;
+  margin: 24px 0 10px;
+}
+
+.BlogDetail-content p {
+  font-size: 19px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+.BlogDetail-content ul,
+.BlogDetail-content ol {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+.BlogDetail-content ul li,
+.BlogDetail-content ol li {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 6px;
+}
+
+.BlogDetail-content strong {
+  font-size: 20px;
+  color: #111;
+}
+
+.BlogDetail-content a {
+  color: #e67e00;
+  text-decoration: underline;
+}
+
+.BlogDetail-content a:hover {
+  color: #111;
+}
