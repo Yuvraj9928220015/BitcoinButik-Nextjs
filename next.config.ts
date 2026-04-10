@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  // ✅ output: "export" HATA DIYA
   trailingSlash: true,
 
   images: {
@@ -13,8 +13,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-
-  // ❌ rewrites() nahi chalega — hatao completely
 };
 
 export default nextConfig;
