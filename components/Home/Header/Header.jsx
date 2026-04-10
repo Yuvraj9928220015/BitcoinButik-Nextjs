@@ -12,7 +12,7 @@ const layoutsData = [
       {
         id: 5,
         src: {
-          desktop: '/BITCOINE VIDEO 1_1.mp4',  // ✅ /public folder mein rakho
+          desktop: '/BITCOINE_VIDEO_1_1.mp4',  // ✅ /public folder mein rakho
           mobile: '/REEL.mp4'                  // ✅ /public folder mein rakho
         },
         title: 'Liberty Pendant',
