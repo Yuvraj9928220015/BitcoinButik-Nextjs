@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ✅ Large video files - exclude karo
+*.mp4
+*.MP4
+*.mov
+*.MOV
